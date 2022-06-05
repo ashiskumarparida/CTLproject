@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Docker login 
-        run: docker login -u="ashisparida" -p="ashis@7077"
+        run: docker login -u="ashisparida" -p="7381284169"
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag ashisparida/gitpush:$GITHUB_SHA 
       - name: Docker push 
